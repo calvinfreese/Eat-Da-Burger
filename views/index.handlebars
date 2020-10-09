@@ -1,0 +1,29 @@
+<h1>Burgers!</h1>
+
+<ul>
+    {{#each burgers}}
+        {{#unless devoured}}
+            {{> burgers/burger-block devour=true}}
+        {{/unless}}
+    {{/each}}
+</ul>
+
+<ul>
+    {{#each burgers}}
+        {{#if devoured}}
+            {{> burgers/burger-block devour=false}}
+        {{/if}}
+    {{/each}}
+</ul>
+
+
+
+
+<form  class="add-burger">
+    <div>
+        <textarea id="burger-text" name="burger-type" placeholder="What kind of burger would you like to see on the menu?">
+
+        </textarea>
+    </div>
+    <button type="submit">Submit</button>
+</form>
