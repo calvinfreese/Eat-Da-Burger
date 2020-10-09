@@ -17,7 +17,7 @@ let orm = {
         });
     },
     updateOne: function(tableName, colVal, condition, cb) {
-        let queryString = `UPDATE ${tableName} SET ${JSON.stringifiy(colVal)} WHERE ${condition};`;
+        let queryString = `UPDATE ${tableName} SET devoured = ${colVal} WHERE ${condition};`;
         connection.query(queryString, function(err, result){
             if (err) throw err;
             cb(result);
