@@ -1,29 +1,39 @@
 <h1>Burgers!</h1>
 
-<ul>
-    {{#each burgers}}
-        {{#unless devoured}}
-            {{> burgers/burger-block devour=true}}
-        {{/unless}}
-    {{/each}}
-</ul>
 
-<ul>
-    {{#each burgers}}
-        {{#if devoured}}
-            {{> burgers/burger-block devour=false}}
-        {{/if}}
-    {{/each}}
-</ul>
+<div class="d-flex justify-content-center">
+    
+    <ul>
+        <h2>Burgers To Eat</h2>
+        {{#each burgers}}
+            {{#unless devoured}}
+                {{> burgers/burger-block devour=true}}
+            {{/unless}}
+        {{/each}}
+    </ul>
 
 
 
 
-<form  class="add-burger">
-    <div>
-        <textarea id="burger-text" name="burger-type" placeholder="What kind of burger would you like to see on the menu?">
+    
+    <ul>
+        <h2>Burgers You've Devoured</h2>
+        {{#each burgers}}
+            {{#if devoured}}
+                <li class="eaten">{{burger_name}}</li>
+            {{/if}}
+        {{/each}}
+    </ul>
+</div>
 
-        </textarea>
-    </div>
-    <button type="submit">Submit</button>
-</form>
+
+
+<div class="d-flex justify-content-center">
+    <form  class="add-burger">
+        <div>
+            <input id="burger-text" name="burger_name" placeholder="What kind of burger would you like to see on the menu?">
+
+            </input>
+        <button type="submit">Submit</button>
+    </form>
+</div>

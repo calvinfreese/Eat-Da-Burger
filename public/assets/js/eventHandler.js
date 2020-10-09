@@ -4,7 +4,8 @@ $('.add-burger').on("submit", function(event){
     event.preventDefault();
 
     let newBurg = {
-        burger_name: $('#burger-text').val().trim()
+        burger_name: $('#burger-text').val().trim(),
+        devoured: 0
     };
 
     $.ajax("/api/burgers", {
@@ -20,12 +21,12 @@ $('.add-burger').on("submit", function(event){
 
 $('.devour').on('click', function(event){
     let id = $(this).data("id");
-    let devourBool = $(this).data("data-devoured");
-
+    
+    
     let eatBurger = {
-        devoured: devourBool
+        devoured: true
     };
-
+    
     $.ajax("/api/burgers/" + id, {
         type: "PUT",
         data: eatBurger
