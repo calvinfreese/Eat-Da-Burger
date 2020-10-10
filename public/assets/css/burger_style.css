@@ -1,28 +1,132 @@
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
+    font-family: 'Patrick Hand SC', cursive;
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    background-color: #30323D;
-}
-
-h1, h2 {
+header {
+    background-color: #295b44;
     color: #E8C547;
+    text-align: center;
+    background: radial-gradient(circle, hsla(152, 38%, 26%, 1) 0%, hsla(151, 37%, 14%, 1) 100%);
+    box-shadow: 0px 10px 10px #1F1E1E;
 }
 
-li {
-    background-color: #8AB0AB;
+h1 {
+    margin-top: -25px;
+    
+}
+body {
+    background: radial-gradient(circle, hsla(220, 2%, 25%, 1) 0%, hsla(0, 2%, 12%, 1) 100%);
+}
+
+h2 {
+    color: #E8C547;
+    text-decoration: underline;
+    font-size: 3em;
+    font-family: 'Patrick Hand SC', cursive;
+    
+}
+
+.burger-ul {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.burger-li {
+    font-size: 2em;
     padding: 10px;
     border-radius: 2px;
-    width: 150px;
+    width: 100%;
     margin: 2px;
+    color: #CED6DA;
+    list-style-type: none;
+    letter-spacing: 2px;
+}
+
+form {
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+label {
+    font-size: 1.5em;
+    color: #CED6DA;
+    letter-spacing: 1px;
+}
+
+input[type=text] {
+    width: 75%;
+    border: 2px solid #1F1E1E; 
+    border-radius: 5px;
+    padding: 2px;
+    background-color: #CED6DA;
+}
+
+.submit {
+    letter-spacing: 1px;
 }
 
 button {
-    border: 3px solid black;
-    border-radius: 3px;
-    padding: 5px;
+    border: 2px solid #CD4F4F;
+    border-radius: 5px;
+    color: #CD4F4F;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
     background-color: transparent;
     
+    
 }
+
+button:hover {
+    border: 2px solid #CD4F4F;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: hsla(220, 2%, 25%, .7);
+    box-shadow: 2px 2px 5px #1F1E1E, -2px 2px 5px #1F1E1E;
+}
+
+.burgers {
+    margin: 0 auto;
+    background: radial-gradient(circle, hsla(152, 38%, 26%, 1) 0%, hsla(151, 37%, 14%, 1) 100%);
+    width: 75%;
+    border-radius: 5px;
+    border: 10px solid #9C6E44;
+    margin-top: 50px;
+    box-shadow: 10px 10px 15px #1F1E1E, -10px 10px 15px #1F1E1E;
+    
+}
+
+
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #295b44;
+    color: #E8C547;
+    background: radial-gradient(circle, hsla(152, 38%, 26%, 1) 0%, hsla(151, 37%, 14%, 1) 100%);
+    box-shadow: 5px -10px 10px #1F1E1E;
+}   
+
+    .footer-ul {
+        display: inline;
+    }
+    .footer-li {
+        display: inline;
+    }
+    .linked {
+        text-decoration: none;
+        color: #E8C547;
+    }
+
+    .linked:hover {
+        color: #E8C547;
+        letter-spacing: 1.5px;
+    }
+
