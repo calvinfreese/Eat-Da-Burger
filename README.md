@@ -44,9 +44,9 @@ Click [Here](https://whispering-bayou-19745.herokuapp.com/) to view the Heroku d
 
 ## Screenshots
 #### Eat-Da-Burger
-![Tour](./public/assets/ea-da-burger.gif)
+![Tour](./public/assets/eat-da-burger.gif)
 #### Home Page
- ![home](./public/assets/ea-da-burger.png)
+ ![home](./public/assets/eat-da-burger.png)
 
 
 
