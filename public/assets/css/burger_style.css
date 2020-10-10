@@ -105,6 +105,7 @@ button:hover {
 
 #footer {
     position: absolute;
+    margin: 0 auto;
     bottom: 0;
     width: 100%;
     text-align: center;
