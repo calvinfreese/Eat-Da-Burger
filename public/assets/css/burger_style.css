@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+/* header found in /views/layouts/main.handlebars */
 header {
     background-color: #295b44;
     color: #E8C547;
@@ -12,10 +13,11 @@ header {
     box-shadow: 0px 10px 10px #1F1E1E;
 }
 
-h1 {
-    margin-top: -25px;
-    
-}
+    h1 {
+        margin-top: -25px;
+    }
+
+/* Body, h2, form, ul, li, and buttons found in views/index.handlebars */
 body {
     background: radial-gradient(circle, hsla(220, 2%, 25%, 1) 0%, hsla(0, 2%, 12%, 1) 100%);
 }
@@ -28,68 +30,7 @@ h2 {
     
 }
 
-.burger-ul {
-    text-align: center;
-    margin-top: 15px;
-}
-
-.burger-li {
-    font-size: 2em;
-    padding: 10px;
-    border-radius: 2px;
-    width: 100%;
-    margin: 2px;
-    color: #CED6DA;
-    list-style-type: none;
-    letter-spacing: 2px;
-}
-
-form {
-    margin: 0 auto;
-    width: 50%;
-    margin-top: 20px;
-    text-align: center;
-}
-
-label {
-    font-size: 1.5em;
-    color: #CED6DA;
-    letter-spacing: 1px;
-}
-
-input[type=text] {
-    width: 75%;
-    border: 2px solid #1F1E1E; 
-    border-radius: 5px;
-    padding: 2px;
-    background-color: #CED6DA;
-}
-
-.submit {
-    letter-spacing: 1px;
-}
-
-button {
-    border: 2px solid #CD4F4F;
-    border-radius: 5px;
-    color: #CD4F4F;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 16px;
-    background-color: transparent;
-    
-    
-}
-
-button:hover {
-    border: 2px solid #CD4F4F;
-    border-radius: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: hsla(220, 2%, 25%, .7);
-    box-shadow: 2px 2px 5px #1F1E1E, -2px 2px 5px #1F1E1E;
-}
-
+/* burgers */
 .burgers {
     margin: 0 auto;
     background: radial-gradient(circle, hsla(152, 38%, 26%, 1) 0%, hsla(151, 37%, 14%, 1) 100%);
@@ -100,34 +41,106 @@ button:hover {
     box-shadow: 10px 10px 15px #1F1E1E, -10px 10px 15px #1F1E1E;
     
 }
+    form {
+        margin: 0 auto;
+        width: 50%;
+        margin-top: 20px;
+        text-align: center;
+    }
 
+        label {
+            font-size: 1.5em;
+            color: #CED6DA;
+            letter-spacing: 1px;
+        }
 
+        input[type=text] {
+            width: 75%;
+            border: 2px solid #1F1E1E; 
+            border-radius: 5px;
+            padding: 2px;
+            background-color: #CED6DA;
+        }
 
-#footer {
-    position: absolute;
-    margin: 0 auto;
-    bottom: 0;
+        .submit {
+            letter-spacing: 1px;
+        }
+
+    .burger-ul {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+        .burger-li {
+            font-size: 2em;
+            padding: 10px;
+            border-radius: 2px;
+            width: 100%;
+            margin: 2px;
+            color: #CED6DA;
+            list-style-type: none;
+            letter-spacing: 2px;
+        }
+        
+
+    /* All Buttons (in form and in li's */
+    button {
+        border: 2px solid #CD4F4F;
+        border-radius: 5px;
+        color: #CD4F4F;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 16px;
+        background-color: transparent;
+        
+        
+    }
+
+    button:hover {
+        border: 2px solid #CD4F4F;
+        border-radius: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: hsla(220, 2%, 25%, .7);
+        box-shadow: 2px 2px 5px #1F1E1E, -2px 2px 5px #1F1E1E;
+    }
+
+/* Gives space between footer and .burgers div */
+.empty {
+    height: 80px;
+}
+
+/* footer found in /views/layouts/main.handlebars */
+.footer-div {
+    position: fixed;
     width: 100%;
+    bottom: 0;
     text-align: center;
-    background-color: #295b44;
-    color: #E8C547;
-    background: radial-gradient(circle, hsla(152, 38%, 26%, 1) 0%, hsla(151, 37%, 14%, 1) 100%);
-    box-shadow: 5px -10px 10px #1F1E1E;
-}   
-
-    .footer-ul {
-        display: inline;
-    }
-    .footer-li {
-        display: inline;
-    }
-    .linked {
-        text-decoration: none;
+}
+    #footer {
+        padding: 0 30px;
+        margin: 0 auto;
+        bottom: 0;
+        width: 100%;
+        background-color: #295b44;
         color: #E8C547;
-    }
+        background: radial-gradient(circle, hsla(152, 38%, 26%, 1) 0%, hsla(151, 37%, 14%, 1) 100%);
+        box-shadow: 5px -10px 10px #1F1E1E;
+    }   
 
-    .linked:hover {
-        color: #E8C547;
-        letter-spacing: 1.5px;
-    }
+        .footer-ul {
+            display: inline;
+        }
+        .footer-li {
+            display: inline;
+        }
+        .linked {
+            text-decoration: none;
+            color: #E8C547;
+        }
+
+        .linked:hover {
+            color: #E8C547;
+            letter-spacing: 1.5px;
+        }
 
