@@ -1,12 +1,12 @@
 // Set up MySQL connection.
 const mysql = require("mysql");
-const credentials = require('../config')
+// const credentials = require('../config');
 
 const connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
-  user: credentials.user,
-  password: credentials.password,
+  user: "potato",
+  password: "1pass2word3",
   database: "burgers_db"
 });
 
