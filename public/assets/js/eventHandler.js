@@ -3,20 +3,27 @@ $(function() {
 $('.add-burger').on("submit", function(event){
     event.preventDefault();
 
-    let newBurg = {
-        burger_name: $('#burger-text').val().trim(),
-        devoured: 0
-    };
+    //If submission is not an empty string, set value then POST
+    if($('#burger-text').val().length > 1){
+        let newBurg = {
+            burger_name: $('#burger-text').val().trim(),
+            devoured: 0
+        };
+    
+        $.ajax("/api/burgers", {
+            type: "POST",
+            data: newBurg
+        }).then(
+            function() {
+                console.log("New burger added to the menu!");
+                location.reload();
+            }
+        );
+    } else {
+        console.log('Empty string deteced for burger submission. Please retry your entry.')
+    }
 
-    $.ajax("/api/burgers", {
-        type: "POST",
-        data: newBurg
-    }).then(
-        function() {
-            console.log("New burger added to the menu!");
-            location.reload();
-        }
-    );
+    
 });
 
 $('.devour').on('click', function(event){
